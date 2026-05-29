@@ -1,0 +1,619 @@
+body {
+      min-height: 100vh;
+      background: linear-gradient(270deg, #E7E7FF 0%, #D9EEFF 100%);
+      box-shadow: inset 0 0 0 4px #FFF;
+}
+
+/* 包装 */
+.wrapper {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 20px 15px;
+      padding-top: 0px;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+}
+
+/* 块 */
+section {
+      box-shadow: 0px 0px 10px 0px #0743924D;
+      margin-top: 25px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: var(--text-color);
+}
+
+section:first-child {
+      margin-top: 20px;
+}
+
+section .container {
+      padding: 30px 20px;
+}
+
+/* 标题栏 */
+.headline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 3px solid #FFFFFF;
+      background: linear-gradient(90.2deg, #DCF0FF 58.33%, #FFFFFF 99.98%);
+      padding: 16px 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      box-shadow: 0px 2px 5px 1px #07439220;
+}
+
+.headline .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+}
+
+.headline .title::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border: 3.5px solid #98A9FF;
+      border-radius: 50%;
+      margin-right: 13px;
+}
+
+.headline .description {
+      color: var(--text-color-inverse-grey);
+      font-size: 15px;
+}
+
+/* 标题栏 */
+header {
+      position: relative;
+      width: 1200px;
+      height: 142px;
+      margin: 0 auto;
+      padding: 40px 20px 0px;
+      box-sizing: border-box;
+}
+
+header .header {
+      position: absolute;
+      left: 30px;
+      top: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+header .header img {
+      width: 180px;
+}
+
+header .header span {
+      flex: 1;
+      margin-top: -15px;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      padding-right: 200px;
+}
+
+header .header span::after {
+      content: '（' attr(data-mode) '）';
+      font-size: 28px;
+}
+
+header .ikon {
+      width: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+}
+
+.action-bar {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: flex-end;
+}
+
+.action-bar .download-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 10px;
+      height: 30px;
+      background-color: var(--text-color);
+      border: 1.5px solid var(--color-primary);
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.action-bar .download-button img {
+      width: 18px;
+}
+
+.action-bar .download-button span {
+      color: var(--color-primary);
+      font-weight: bold;
+      font-size: 14px;
+      margin-left: 8px;
+      letter-spacing: 0.5px;
+}
+
+/* 基本信息 */
+.basic-info {
+      margin-top: 0px !important;
+}
+
+.basic-info .container ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+}
+
+.basic-info .container ul li {
+      width: calc(50% - 10px);
+      box-sizing: border-box;
+      padding: 0px 20px;
+}
+
+.basic-info .container ul li span:first-child {
+      color: var(--text-color-placeholder-grey);
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 1px;
+}
+
+.basic-info .container ul li span:last-child {
+      color: var(--text-color-placeholder-grey);
+}
+
+/* 检测结果 */
+.result .container {
+      padding: 30px 40px;
+}
+
+/* 疑似AIGC片段 */
+.aigc-fragment {
+      margin-top: 0px;
+}
+
+.result .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 10px;
+      height: 180px;
+      border-bottom: 0.5px solid #9CBFFA;
+}
+
+.aigc-rate {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--text-color-blue);
+      border-bottom: 2px solid var(--text-color-blue);
+      letter-spacing: 2px;
+}
+
+.result .top .left ul {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 34px 0px;
+}
+
+.result .top .left ul li {
+      font-size: 15px;
+      color: var(--text-color-placeholder-grey);
+}
+
+.result .top .left ul li span {
+      display: inline-block;
+      font-size: 15px;
+      color: var(--text-color-placeholder-grey);
+}
+
+.result .top .left ul li span:first-child {
+      /* width: 160px; */
+      /* text-align: justify; */
+      /* text-align-last: justify; */
+      white-space: nowrap;
+}
+
+.result .top .left ul li span:last-child {
+      margin-left: -5px;
+}
+
+.result .top .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.result .top .right img {
+      width: 200px;
+      margin-right: 30px;
+}
+
+.result .top .right ul {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 30px 0px 40px;
+}
+
+.result .top .right ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.result .top .right ul li::before {
+      content: '';
+      width: 10px;
+      height: 18px;
+      background-color: var(--suspected-red);
+      margin-right: 15px;
+}
+
+.result .top .right ul li:nth-child(2)::before {
+      background-color: var(--suspected-black);
+}
+
+.result .top .right ul li:nth-child(3)::before {
+      background-color: var(--suspected-gray);
+}
+
+.result .top .right ul li span {
+      font-size: 14px;
+      color: var(--text-color-placeholder-grey);
+}
+
+.result .top .right ul li span:first-child {
+      /* width: 92px; */
+      /* text-align: justify; */
+      /* text-align-last: justify; */
+      white-space: nowrap;
+}
+
+.result .bottom {
+      padding: 0px 10px;
+}
+
+.result .bottom p {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--text-color-blue);
+      padding: 30px 0px;
+      letter-spacing: 2px;
+}
+
+.result .bottom ul {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+}
+
+.result .bottom ul li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.result .bottom ul li::before {
+      content: '';
+      width: 10px;
+      height: 18px;
+      background-color: var(--suspected-red);
+      margin-right: 15px;
+}
+
+.result .bottom ul li:nth-child(2)::before {
+      background-color: var(--suspected-red-orange);
+}
+
+.result .bottom ul li:nth-child(3)::before {
+      background-color: var(--suspected-orange);
+}
+
+.result .bottom ul li:nth-child(4)::before {
+      background-color: var(--suspected-black);
+}
+
+.result .bottom ul li:nth-child(5)::before {
+      background-color: var(--suspected-gray);
+}
+
+.result .bottom ul li span {
+      color: var(--text-color-placeholder-grey);
+      font-size: 15.5px;
+}
+
+.result .bottom ul li span:first-child {
+      display: inline-block;
+      width: 48px;
+      /* text-align: justify; */
+      /* text-align-last: justify; */
+}
+
+.result .bottom ul li span:last-child {
+
+}
+
+.result .bottom .tips {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 30px;
+}
+
+.result .bottom .tips img {
+      position: relative;
+      top: -2px;
+      width: 28px;
+      margin-right: 8px;
+      margin-left: -8px;
+}
+
+.result .bottom .tips span {
+      color: var(--text-color-placeholder);
+      font-size: 15.5px;
+}
+
+.service-button {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+}
+
+.service-button img {
+      height: 40px;
+}
+
+/* 表格 */
+.table {
+      width: 100%;
+      border: 0.5px solid var(--text-color-grey-light);
+      border-collapse: collapse;
+      margin-top: 20px;
+}
+
+.table thead {
+      height: 52px;
+      background-color: var(--bg-color-light-5);
+}
+
+.table thead tr th {
+      font-size: 15px;
+      padding: 0px 20px;
+      text-align: center;
+      white-space: nowrap;
+}
+
+.table tbody td {
+      padding: 10px 10px;
+      text-align: center;
+      border: 0.5px solid var(--text-color-grey-light);
+}
+
+.table tbody .rate,
+.table tbody .value {
+      letter-spacing: 1px;
+}
+
+.table .fragment {
+      text-align: justify;
+      font-size: 14px;
+      line-height: 24px;
+      cursor: pointer;
+      padding: 20px 15px;
+}
+
+.table .fragment a {
+      text-decoration: none;
+      word-break: break-all;
+}
+
+.table .level div {
+      width: 38px;
+      height: 16px;
+      margin: 0 auto;
+}
+
+.table .suspected-red .fragment a p {
+      color: var(--suspected-red);
+}
+
+.table .suspected-red .value {
+      color: var(--suspected-red);
+}
+
+.table .suspected-red .level div {
+      background-color: var(--suspected-red);
+}
+
+.table .suspected-red-orange .fragment a p {
+      color: var(--suspected-red-orange);
+}
+
+.table .suspected-red-orange .value {
+      color: var(--suspected-red-orange);
+}
+
+.table .suspected-red-orange .level div {
+      background-color:var(--suspected-red-orange);
+}
+
+.table .suspected-orange .fragment a p {
+      color: var(--suspected-orange);
+}
+
+.table .suspected-orange .value {
+      color: var(--suspected-orange);
+}
+
+.table .suspected-orange .level div {
+      background-color:var(--suspected-orange);
+}
+
+/* 说明 */
+.explain {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0px 20px;
+      margin-top: 30px;
+}
+
+.explain .title {
+      font-weight: bold;
+      font-size: 17px;
+}
+
+.explain .container {
+      padding: 10px 0px 0px;
+}
+
+.explain .container ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 15px;
+}
+
+/* 原文内容 */
+.original-content {
+      margin-top: 0px;
+}
+
+.original-content .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+}
+
+.original-content .sidebar {
+      min-width: 90px;
+      box-shadow: 0px 0px 7.5px 0px #846E6E40;
+      border: 0.75px solid #397EF480;
+      background-color: var(--text-color);
+}
+
+.original-content ul {
+      padding: 30px;
+      width: 100%;
+}
+
+.original-content ul li {
+      position: relative;
+      margin: 20px 0px;
+}
+
+.original-content ul li p {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 30px;
+      transition: all 0.2s ease-in-out 0s;
+      margin-top: 20px;
+      word-break: break-all;
+}
+
+.original-content ul li p:first-child {
+      margin-top: 0px;
+}
+
+.original-content .suspected-gray p {
+      color: var(--text-color-placeholder-grey);
+}
+
+.original-content .suspected-black p {
+      color: var(--suspected-black);
+}
+
+.original-content .suspected-red p {
+      color: var(--suspected-red);
+}
+
+.original-content .suspected-red-orange p {
+      color: var(--suspected-red-orange);
+}
+
+.original-content .suspected-orange p {
+      color: var(--suspected-orange);
+}
+
+.original-content [class^="suspected"] .value {
+      width: 90px;
+      position: absolute;
+      right: -120px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+}
+
+.original-content [class^="suspected"] .value .left {
+      width: 22px;
+      height: 100%;
+      background-color: var(--suspected-red);
+}
+
+.original-content [class^="suspected"] .value .right {
+      flex: 1;
+      height: 100%;
+      background-color: var(--suspected-red-bg);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.original-content [class^="suspected"] .value .right span {
+      color: var(--suspected-red);
+      font-size: 18.5px;
+      letter-spacing: 1px;
+}
+
+.original-content .suspected-red-orange .value .left {
+      background-color: var(--suspected-red-orange);
+}
+
+.original-content .suspected-red-orange .value .right {
+      background-color: var(--suspected-red-orange-bg);
+}
+
+.original-content .suspected-red-orange .value .right span {
+      color: var(--suspected-red-orange);
+}
+
+.original-content .suspected-orange .value .left {
+      background-color: var(--suspected-orange);
+}
+
+.original-content .suspected-orange .value .right {
+      background-color: var(--suspected-orange-bg);
+}
+
+.original-content .suspected-orange .value .right span {
+      color: var(--suspected-orange);
+}
+
+#echart-main {
+      width: 220px;
+      height: 220px;
+      margin-top: -10px;
+}

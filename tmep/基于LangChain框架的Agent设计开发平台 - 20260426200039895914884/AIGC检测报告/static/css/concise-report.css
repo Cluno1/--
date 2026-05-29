@@ -1,0 +1,76 @@
+.detection-range {
+      margin-top: 10px;
+}
+
+.detection-range .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px 0px 10px 60px;
+}
+
+.detection-range .container li {
+      width: calc(25% - 8px);
+      color: var(--text-color-placeholder-grey);
+      letter-spacing: 2px;
+      font-size: 16px;
+}
+
+.similar-literature tbody td:nth-child(2) {
+      padding-left: 15px;
+      text-align: left;
+}
+
+.similar-literature tbody td a {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text-color-placeholder-grey);
+}
+
+.similar-literature tbody td a:hover {
+      color: var(--text-color-azure);     
+}
+
+.similar-literature tbody td .info {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+}
+
+.similar-literature tbody td .info span {
+      font-size: 14px;
+}
+
+.similar-literature tbody td .info .author span {
+      color: var(--text-color-placeholder-light);
+}
+
+.similar-literature tbody td .info .source {
+      color: var(--text-color-placeholder-light);
+}
+
+.similar-literature tbody td .info .strikethrough {
+      color: var(--text-color-placeholder-light);
+      margin: 0px 10px;
+}
+
+.similar-literature tbody td .info .year {
+      color: var(--text-color-placeholder-light);
+}
+
+.similar-literature tbody tr td span {
+      font-size: 15px;
+}
+
+.similar-literature tbody tr td:nth-child(3) span {
+      color: var(--text-color-red);
+      font-weight: bold;
+}
+
+.similar-literature tbody tr td:nth-child(1) span,
+.similar-literature tbody tr td:nth-child(4) span {
+      color: var(--text-color-inverse-light);
+}

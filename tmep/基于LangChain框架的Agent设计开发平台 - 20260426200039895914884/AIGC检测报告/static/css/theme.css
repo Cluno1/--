@@ -1,0 +1,57 @@
+
+:root {
+
+      /* 行为相关颜色 */
+      --color-primary: #3547FF;
+      --color-warning: #f0ad4e;
+      --color-error: #FA4545;
+      --color-success: #00AB2B;
+
+      /* 文字基本颜色 */
+      --text-color: #FFFFFF;
+      --text-color-inverse: #000000;
+      --text-color-inverse-grey: #262626;
+      --text-color-inverse-light: #4E4E4E;
+      --text-color-inverse-light-1: #525252;
+      --text-color-grey: #999999;
+      --text-color-placeholder: #7A7A7A;
+      --text-color-placeholder-grey: #626262;
+      --text-color-disable: #cccccc;
+      --text-color-placeholder-light: #A1A1A1;
+      --text-color-grey-light: #DADADA;
+      --text-color-red: #FF0000;
+      --text-color-orange: #F88A44;
+      --text-color-azure: #397EF4;
+      --text-color-blue: #2E3CCE;
+      --text-color-blue-light: #C3C4DB;
+      --text-color-purple: #5D5FEF;
+
+      /* 背景颜色 */
+      --bg-color: #3547FF;
+      --bg-color-hover: #DEE5FF;
+      --bg-color-light-3: #F9F9F9;
+      --bg-color-light-4: #EFF2FC;
+      --bg-color-light-5: #F2F8FF;
+      --bg-color-light-6: #f2f2f2;
+      --bg-color-light-7: #f3f3f3;
+      --bg-color-light-8: #f4f4f4;
+      --bg-color-light-9: #fafafa;
+      --bg-color-light-blue-1: #E0EFFB;
+      --bg-color-light-blue-2: #F8FCFF;
+      --bg-color-gradient: linear-gradient(109.56deg, #DCF0FF 3.01%, #F8F9FF 43.49%, #E4EBFF 83.96%, #C2C5FF 124.44%);
+      --bg-color-gradient-180deg: linear-gradient(180deg, #DBD3FF 0%, #BDC1FF 100%);
+      
+
+      /* box-shadow */
+      --box-shadow-grey: 0px 0px 7.5px 0px #846E6E40;
+
+      /* 疑似度色卡 */
+      --suspected-red: #EF303B;
+      --suspected-red-bg: #EF303B10;
+      --suspected-red-orange: #F97E3C;
+      --suspected-red-orange-bg: #F97E3C10;
+      --suspected-orange: #FAB921;
+      --suspected-orange-bg: #FAB92110;
+      --suspected-black: #373737;
+      --suspected-gray: #DFE4EA;
+}

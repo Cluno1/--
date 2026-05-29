@@ -1,0 +1,88 @@
+* {
+      margin: 0;
+      padding: 0;
+      font-family: 'PingFangSC-Regular', 'helvetica neue', tahoma, 'PingFang SC', 'microsoft yahei', arial, 'hiragino sans gb', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'tnum';
+      font-variant-numeric: tabular-nums;
+      color: var(--text-color-inverse-grey);
+      -webkit-print-color-adjust: exact;
+}
+
+ul,
+ol {
+      list-style: none;
+}
+
+body {
+      min-height: 100vh;
+}
+
+#bg {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+}
+
+.marked-red {
+      color: var(--text-color-red);
+      word-break: break-word;
+}
+
+.marked-green {
+      color: var(--color-success);
+      word-break: break-word;
+}
+
+.marked-grey {
+      color: #AAAAAA;
+      word-break: break-word;
+}
+
+/* 广告位 */
+.banner {
+      width: 100%;
+      cursor: pointer;
+}
+
+.banner .html {
+      width: calc(100% + 20px);
+      position: relative;
+      left: -10px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+}
+
+.banner .pdf {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #BCA3FF 0%, #6A73F8 100%);
+      border-radius: 12px;
+
+      .text {
+            width: 45%;
+      }
+
+      p {
+            color: #FFD362;
+            margin: 6px 0px 10px 0px;
+            font-size: 28px;
+            text-decoration: underline;
+            letter-spacing: 2px;
+      }
+
+      span {
+            color: #FFFFFF;
+            letter-spacing: 2px;
+      }
+}

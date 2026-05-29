@@ -1,0 +1,16 @@
+.original-content {
+      color: var(--text-color-inverse-grey);
+      line-height: 30px;
+      word-break: break-all;
+      margin-top: 10px;
+      margin-bottom: 0px;
+}
+
+.original-content .container {
+      text-indent: 2rem;
+}
+
+.action-bar .tabs .indicator {
+      width: 172.5px;
+      transform: translateX(238.5px);
+}

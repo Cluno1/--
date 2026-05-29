@@ -1,0 +1,493 @@
+*::-webkit-scrollbar {
+      width: 6px !important;
+      height: 6px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+      border-radius: 6px !important;
+}
+
+/* 基本信息 */
+.basic-info {
+      margin-top: 0px !important;
+}
+
+.headline {
+      box-shadow: 0px 2px 4px #07439220 !important;
+}
+
+.box-scroller {
+      width: calc(100% - 600px);
+}
+
+.container {
+      padding-right: 5px !important;
+}
+
+.check-detail {
+      margin-top: 0px;
+}
+
+.content {
+      display: flex;
+      flex-direction: row;
+      padding: 15px;
+}
+
+.error-info-scroller {
+      width: 300px;
+      height: calc(100% - 20px);
+      flex-shrink: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 10px 5px 10px 0px;
+      box-sizing: border-box;
+      background-color: var(--text-color);
+      border-radius: 8px;
+}
+
+.error-info {
+      box-sizing: border-box;
+      padding: 0px 10px;
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.error-info .issues-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      display: none;
+      padding-bottom: 10px;
+}
+
+.error-info .switch-question {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      margin: 30px 0px 25px;
+}
+
+.error-info .switch-question div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+}
+
+.error-info .switch-question img {
+      width: 22px;
+}
+
+.error-info .switch-question .next img {
+      transform: rotateZ(180deg);
+}
+
+.error-info .switch-question span {
+      font-size: 15px;
+      color: var(--text-color-placeholder);
+}
+
+.error-info .issues {
+      display: flex;
+      flex-direction: column;
+}
+
+.error-info .issues-wrapper .question-count {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+}
+
+.error-info .issues-wrapper .question-count .mark-text {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.error-info .issues-wrapper .question-count .mark {
+      cursor: default;
+}
+
+.error-info .issues-wrapper .question-count p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      letter-spacing: 1px;
+      font-size: 17px;
+      line-height: 17px;
+}
+
+.error-info .issues-wrapper .question-count .mark-text p {
+      font-weight: bold;
+}
+
+.error-info .issues-wrapper .question-count p span:first-child {
+      color: var(--color-error);
+      font-size: 20px;
+      margin: 0px 7px;
+}
+
+.error-info .issues .issue-item {
+      width: 100%;
+      border: 1px solid var(--text-color-grey-light);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+}
+
+.error-info .issues .issue-item .title {
+      height: 50px;
+      background-color: #E8EEFF8F;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 10px;
+      border-bottom: 1px solid var(--text-color-grey-light);
+}
+
+.error-info .issues .issue-item .title p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      letter-spacing: 1px;
+      font-size: 17px;
+      line-height: 17px;
+}
+
+.error-info .issues .issue-item .title p:first-child {
+      font-weight: bold;
+}
+
+.error-info .issues .issue-item .title p:first-child::before {
+      content: '';
+      width: 6px;
+      height: 18px;
+      background-color: #8994FF;
+      margin-right: 8px;
+      border-radius: 2px;
+}
+
+.error-info .issues .issue-item .title p span:first-child {
+      color: var(--color-error);
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0px 7px;
+}
+
+.error-info .issues .issue-item ul {
+      padding: 10px;
+      background-color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+
+.error-info .issues .issue-item ul li {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+}
+
+.error-info .issues .issue-item>ul>li {
+      border-bottom: 1px solid var(--text-color-grey-light);
+      padding-bottom: 15px;
+}
+
+.error-info .issues .issue-item>ul>li:last-child {
+      border-bottom: none;
+      padding-bottom: 0px;
+}
+
+.error-info .issues .issue-item ul li p {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+}
+
+.error-info .issues .issue-item ul li .type span:first-child {
+      position: relative;
+      top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 17px;
+      height: 17px;
+      border: 1px solid var(--text-color-placeholder-grey);
+      border-radius: 10px;
+      flex-shrink: 0;
+      font-size: 16px;
+      line-height: 15px;
+}
+
+.error-info .issues .issue-item ul li .type span:nth-child(2) {
+      color: var(--text-color-placeholder);
+      margin-left: 8px;
+      white-space: nowrap;
+}
+
+.error::before,
+.standard::before,
+.warn::before,
+.fatal-error::before {
+      content: '';
+      position: relative;
+      top: 3px;
+      width: 16px;
+      margin-right: 5px;
+      height: 16px;
+      background-image: url("../images/format-check/error.png");
+      background-size: cover;
+      flex-shrink: 0;
+}
+
+.standard::before {
+      background-image: url("../images/format-check/success.png");
+}
+
+.fatal-error::before {
+      background-image: url("../images/format-check/fatal-error.png");
+}
+
+.warn::before {
+      background-image: url("../images/format-check/info.png");
+}
+
+.error-info .issues .issue-item ul .type {
+      margin-bottom: 2px;
+}
+
+.error-info .issues .issue-item ul .error span {
+      color: var(--color-error);
+      font-size: 15px;
+}
+
+.error-info .issues .issue-item ul .standard span {
+      color: #11AA73;
+      font-size: 15px;
+}
+
+.error-info .issues .issue-item ul .contents {
+      gap: 8px;
+      padding: 5px 10px;
+}
+
+.error-info .issues .issue-item ul .contents li {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      text-indent: 0.6rem;
+      color: var(--text-color-placeholder-grey);
+      font-size: 15px;
+}
+
+.error-info .issues .issue-item ul .contents li::before {
+      content: '';
+      flex-shrink: 0;
+      position: absolute;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      background-color: var(--text-color-placeholder-grey);
+      border-radius: 50%;
+      margin-right: 0px;
+}
+
+.error-info .use-description {
+      font-weight: bold;
+      padding: 30px 10px 0px;
+}
+
+.error-info .use-description .title {
+      font-size: 20px;
+}
+
+.error-info .use-description .description {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 30px 0px;
+}
+
+.error-info .use-description .mark {
+      position: relative;
+      width: 20px;
+      transform: translateX(0px);
+      font-weight: initial;
+      top: 4px;
+}
+
+.error-info .use-description .text {
+      font-size: 15px;
+      margin-left: 10px;
+      line-height: 26px;
+}
+
+.questions-classify {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      letter-spacing: 0.5px;
+      margin-top: 50px;
+}
+
+.questions-classify li {
+      display: flex;
+      flex-direction: row;
+}
+
+.questions-classify li span {
+      color: var(--color-error);
+      font-size: 16px !important;
+      font-weight: bold;
+      margin-left: 2px;
+      white-space: nowrap;
+}
+
+.questions-classify .fatal-error span {
+      color: #B40104;
+}
+
+.questions-classify .error span {
+      color: #FF3D2B;
+}
+
+.questions-classify .warn span {
+      color: #308EFF;
+}
+
+.questions-classify li p {
+      position: relative;
+      top: 2px;
+      font-size: 13px;
+      font-weight: initial;
+      color: var(--text-color-placeholder);
+}
+
+/* 文档内容 */
+.content .document {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 10px;
+      width: 100%;
+      /* user-select: none; */
+}
+
+.content .document li {
+      position: relative;
+      padding: 50px;
+      border: 1px solid var(--text-color-grey-light);
+      border-radius: 10px;
+      background-color: var(--text-color);
+}
+
+.content .document li .page-number {
+      font-size: 13px;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.content .document li .paragraph {
+      position: relative;
+      font-size: 0px;
+      word-break: break-all;
+      color: #000;
+}
+
+.content .document li .paragraph::after { 
+      content: '';
+      display: inline-block;
+}
+
+.content .document li .paragraph.error {
+      cursor: pointer;
+}
+
+.content .document li .paragraph.error span,
+.content .document li .paragraph.error td,
+.content .document li .paragraph.error th {
+      background-color: #E4555525;
+}
+
+.content .document li .paragraph.error:hover span,
+.content .document li .paragraph.error table:hover td,
+.content .document li .paragraph.error table:hover th {
+      background-color: #E4555565;
+}
+
+.content .document li .paragraph.active span,
+.content .document li .paragraph.active td,
+.content .document li .paragraph.active th {
+      background-color: #E4555565;
+}
+
+.content .document li img,
+.content .document li table {
+      max-width: 100%;
+}
+
+.content .document li table span {
+      background-color: transparent !important;
+}
+
+/* 标记 */
+.mark {
+      text-indent: 0;
+      position: absolute;
+      transform: translateX(-130%);
+      left: 0;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 20px;
+      padding: 2px 5px;
+      color: #e45555;
+      font-size: 12px;
+      line-height: 12px;
+      background: #FCEEEE;
+      border: 1px solid #e45555;
+      border-radius: 3px;
+      cursor: pointer;
+      user-select: none;
+}
+
+.active .mark {
+      background-color: #e45555;
+      color: var(--text-color);
+}
+
+.active .mark::after {
+      border-left-color: #e45555;
+}
+
+.mark::after,
+.mark::before {
+      position: absolute;
+      display: block;
+      content: "";
+      border-color: transparent;
+      border-style: solid;
+      border-width: 3px 0 3px 5px;
+}
+
+.mark::before {
+      right: -5px;
+      border-left-color: #e45555;
+}
+
+.mark::after {
+      right: -3px;
+      border-left-color: #FCEEEE;
+}

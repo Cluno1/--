@@ -1,0 +1,85 @@
+.action-bar .tabs .indicator {
+      width: 140.5px !important;
+      transform: translateX(102px) !important;
+}
+
+.statistics {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 15px;
+}
+
+.full-fragment {
+      margin-top: 10px;
+      margin-bottom: 0px;
+}
+
+.full-fragment table thead tr th:nth-child(1) {
+      width: 60px;
+}
+
+.full-fragment table thead tr th:nth-child(2) {
+      width: 300px;
+}
+
+.full-fragment table tbody tr td:nth-child(2) {
+      font-size: 14px;
+      line-height: 25px;
+      text-align: left;
+      vertical-align: top;
+}
+
+.full-fragment table tbody tr td:nth-child(3) {
+      text-align: left;
+      vertical-align: top;
+}
+
+.full-fragment table tbody tr td .similar-count {
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding: 5px 10px;
+}
+
+.full-fragment table tbody tr td ul {
+      display: flex;
+      flex-direction: column;
+}
+
+.full-fragment table tbody tr td ul li {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+}
+
+.full-fragment table tbody tr td ul li:first-child {
+      margin-top: 0px;
+}
+
+.full-fragment table tbody tr td ul li .paper-info {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 0px;
+      background-color: var(--bg-color-light-8);
+      margin-top: 10px;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      border: 2px solid var(--bg-color-light-8);
+}
+
+.full-fragment table tbody tr td ul li .paper-info div p:first-child span {
+      font-weight: bold;
+}
+
+.full-fragment table tbody tr td ul li .paper-info div p:last-child {
+      margin-top: 10px;
+}
+
+.full-fragment table tbody tr td ul li .content {
+      font-size: 14px;
+      line-height: 25px;
+      text-align: left;
+      padding: 10px 15px;
+      word-break: break-all;
+}

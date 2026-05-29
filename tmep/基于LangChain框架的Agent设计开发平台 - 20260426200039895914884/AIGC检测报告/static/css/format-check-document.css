@@ -1,0 +1,108 @@
+/* 文档 */
+.document {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 10px;
+      width: 100%;
+      /* user-select: none; */
+}
+
+.document li {
+      position: relative;
+      padding: 50px;
+      border: 1px solid var(--text-color-grey-light);
+      border-radius: 10px;
+      background-color: var(--text-color);
+}
+
+.document li .page-number {
+      font-size: 13px;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.document li .paragraph {
+      position: relative;
+      font-size: 0px;
+      word-break: break-all;
+}
+
+.document li .paragraph span sup {
+      color: inherit;
+}
+
+.document li .paragraph::after { 
+      content: '';
+      display: inline-block;
+}
+
+.document li img,
+.document li table {
+      max-width: 100%;
+}
+
+.document li table span {
+      background-color: transparent !important;
+}
+
+/* 饼图 */
+#echart-main {
+      width: 220px;
+      height: 220px;
+      margin-top: -10px;
+}
+
+/* 目录 */
+.catalogue {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.catalogue .dots {
+      flex: 1;
+      padding: 0px 10px;
+      height: 6px;
+      overflow: hidden;
+}
+
+
+/* 表格 */
+table {
+      width: 100%;
+      border-collapse: collapse;
+      line-height: normal;
+}
+
+table th,
+table td {
+      /* padding: 8px 12px; */
+}
+
+/* 分节符 */
+.render-section-break {
+      width: 100%;
+      position: relative;
+      margin: 100px 0;
+      border: 0.6px dashed #86909C;
+}
+
+.render-section-break span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 16px;
+      background: #fff;
+      color: #86909C;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24.502px;
+      text-indent: initial;
+}
